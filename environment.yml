@@ -1,0 +1,18 @@
+name: lakatu
+channels:
+  # - conda-forge/osx-arm64
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.9.10
+  - pandas=1.4.0
+  - spacy=3.2.0
+  - scipy=1.7.3
+  - nltk=3.6.7
+  - pip:
+      - spacy-dbpedia-spotlight==0.2.1
+      - iterative-stratification
+      - "spacy[transformers]==1.1.4"
+      - sparqlwrapper==1.8.5
+      - spacyopentapioca==0.1.4
+      - Wikidata==0.7.0
