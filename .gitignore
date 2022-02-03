@@ -2,3 +2,4 @@
 /models/finetuned_de_core_news_lg_gold/
 /lakatu.iml
 /.idea/
+/models/trf_bert-base-german-cased/
