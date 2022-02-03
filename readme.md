@@ -44,8 +44,9 @@ Newly added targets: _PRF, PRD, EVN, NAT, TIM, DOC, DAT_
 
 Superflous tragets: _MISC_
 
-Confusion matrix is given in models/finetuned_de_core_news_lg_raw/confusion.csv
-Confusion matrix is given in models/finetuned_de_core_news_lg_raw/confusion.png
+Confusion matrix as CSV is given in models/finetuned_de_core_news_lg_raw/confusion.csv
+
+Confusion matrix as PNG is given in models/finetuned_de_core_news_lg_raw/confusion.png
 
 ### Obtained preformance
 
@@ -80,9 +81,9 @@ Superflous tragets: _MISC_
 
 (Small) possiblity of catastrofical forgetting!
 
-Confusion matrix is given in models/finetuned_de_core_news_lg_gold/confusion.csv
-Confusion matrix is given in models/finetuned_de_core_news_lg_gold/confusion.png
+Confusion matrix as CSV is given in models/finetuned_de_core_news_lg_gold/confusion.csv
 
+Confusion matrix as PNG is given in models/finetuned_de_core_news_lg_gold/confusion.png
 
 ### Obtained preformance
 
