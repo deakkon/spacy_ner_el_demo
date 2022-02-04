@@ -12,12 +12,16 @@ Solution is based on the spaCy universe components.
 
 1. _conda env create --file environment.yml_
 2. _conda activate lakatu_
+
+This was tested localy and produced no errors.
    
 ### pip
    
 Alternatevily, use your virtenv tool of choice (e.g. _virtualenv_) to 1) create and 2) activate your own virtenv. Then install all dependencies with
 
 _pip install -r environment.txt_
+
+This is not been tested properly! 
 
 ## Install required spaCy models
 
@@ -129,7 +133,7 @@ train a model from a cfg file: _python -m spacy train src/trainer/ner-tf.cfg --o
 400    2000          58.89   2716.90   76.87   74.64   79.23    0.77
 </pre>
 
-# Annotate a document and extend the Person DBpedia class
+# Annotate a document and extend the _Person_ DBpedia class
 
 We can use the fine-tuned model by using the _src/annotator/annotator.py_ script. 
 

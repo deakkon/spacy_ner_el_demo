@@ -1,6 +1,5 @@
-name: lakatu
+name: lakatu_test
 channels:
-  # - conda-forge/osx-arm64
   - conda-forge
   - pytorch
 dependencies:
@@ -9,10 +8,12 @@ dependencies:
   - spacy=3.2.0
   - scipy=1.7.3
   - nltk=3.6.7
+  - matplotlib
+  - pip
   - pip:
       - spacy-dbpedia-spotlight==0.2.1
       - iterative-stratification
-      - "spacy[transformers]==1.1.4"
+      - "spacy[transformers]"
       - sparqlwrapper==1.8.5
       - spacyopentapioca==0.1.4
       - Wikidata==0.7.0
