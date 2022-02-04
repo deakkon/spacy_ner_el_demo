@@ -1,4 +1,4 @@
-name: lakatu_test
+name: lakatu
 channels:
   - conda-forge
   - pytorch
