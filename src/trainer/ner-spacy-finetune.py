@@ -34,6 +34,5 @@ if __name__ == "__main__":
                         choices=["raw", "gold"],
                         help='Train on which dataset?')
     args = parser.parse_args()
-    print(args)
     model = FineTunedSpacyModel(args.dataset)
     model.train()

@@ -12,6 +12,8 @@ query_person = """
             """
 
 """
+Query template
+
 SELECT * WHERE
   {
      OPTIONAL{<http://dbpedia.org/resource/Lionel_Messi> foaf:name ?name}

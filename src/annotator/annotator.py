@@ -1,3 +1,4 @@
+import argparse
 from pprint import pprint
 
 import spacy
@@ -9,7 +10,7 @@ from spacy.language import Language
 
 from src.annotator.queries import query_person
 
-model_path = f"{ROOT_DIR}/models/de_core_news_lg_finetune"
+model_path = f"{ROOT_DIR}/models/finetuned_de_core_news_lg_gold"
 example_text = """
     Wer ihm dabei zusah, wie er dribbelte und Zauberpässe spielte, fühlte, wie wichtig ihm dieser erste Titel mit Argentinien sein musste. Der Beleg dafür kam mit dem Abpfiff des Endspiels, der niederkniende Messi, die Mitspieler, die nicht ihren Sieg feierten, sondern seinen, die zu ihm liefen, ihn erdrückten. Ein weinender Messi, vor Glück, vor Erleichterung. Als Unvollendeter galt er vielen, weil er, der Mann aus dem Maradona-Land, zwar die Champions League gewonnen hatte und viele andere Pokale, aber die Argentinier nie zu einem Titel geführt hatte.
     """
@@ -92,7 +93,19 @@ class Annotator:
 
 
 if __name__ == "__main__":
-    model = Annotator()
-    model.link_dbpedia(example_text)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-m', '--model',
+                        type=str,
+                        default=model_path,
+                        help='Which model do you want to use?')
+
+    parser.add_argument('-t', '--text',
+                        type=str,
+                        default=example_text,
+                        help='Which text do you want to annotate? We are only extending the Person DBpedia class ATM.')
+
+    args = parser.parse_args()
+    model = Annotator(args.model)
+    model.link_dbpedia(args.text)
 
 
