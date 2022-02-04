@@ -129,4 +129,10 @@ train a model from a cfg file: _python -m spacy train src/trainer/ner-tf.cfg --o
 400    2000          58.89   2716.90   76.87   74.64   79.23    0.77
 </pre>
 
-# Data Insight
+# Annotate a document and extend the Person DBpedia class
+
+We can use the fine-tuned model by using the _src/annotator/annotator.py_ script. 
+
+It accepts two parameters if needed.  Both have default values set. 
+
+To run the annotator you need to make sure there is a spaCy model in the model_path you want to use!
